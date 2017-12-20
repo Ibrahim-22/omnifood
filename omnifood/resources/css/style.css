@@ -13,13 +13,18 @@ orange color: #e67e22
     box-sizing: border-box;
 }
 
-html {
+/*
+overflow-x: hidden': to fix the text go out of the actual width. 
+ */
+html,
+body {
     background-color: #fff;
     color: #555;
     font-family: 'Lito', 'Arial', sans-serif;
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 
 /* 
@@ -348,7 +353,7 @@ select each of the box individually -> use Pseudo class child
 */
 .steps-box:first-child {
     text-align: right;
-    padding-right: 3%;
+    padding-right: 5%;
     margin-top: 30px;
 }
  

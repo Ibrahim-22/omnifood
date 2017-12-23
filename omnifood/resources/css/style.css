@@ -234,7 +234,6 @@ input[type=submit]:active { border: 1px solid #cf6d17; }
 /*
 'background-attachment: fixed': image stays in the same place.
 */
-
 header {
 	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/hero.jpg);
 	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
@@ -300,6 +299,25 @@ header {
 
 .main-nav li a:hover,
 .main-nav li a:active { border-bottom: 2px solid #e67e22; }
+
+/* - MOBILE NAVI - */
+
+/*
+If href attribute is not specified in <a>, it won't have a pointer.
+-> 'cursor: pointer': specifies the mouse cursor to be displayed when pointing over an element.
+*/
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #fff;
+}
+
 
 /* - STICKY NAVI - */
 

@@ -323,7 +323,7 @@ If href attribute is not specified in <a>, it won't have a pointer.
 
 /*
 'position: fixed': naviagion stays always at the same point irrespective of scrolling.
-'z-index': defines the vertical stacking of elements -> sticky navigation will be always on top other elements.
+'z-index': defines the vertical stacking of elements -> sticky navigation will be always on top of other elements.
 */
 
 .sticky {
@@ -603,7 +603,7 @@ standard will be the font-size of the parent (300%).
 /* ---------------------------------------- */
 
 .contact-form {
-	width: 60%;
+	width: 90%;
 	margin: 0 auto;
 }
 
@@ -628,9 +628,36 @@ input[type=checkbox] { margin: 10px 5px 10px 0; }
 /*
 get rid of borders when it's focused.
 */
-
 *:focus { outline: none; }
 
+
+/* - MAPS - */
+.map-box { 
+	width: 100%;
+	height: 560px;
+	position: relative;
+}
+
+/*
+'z-index': use it to stack elements, higher index will appears first.
+*/
+.map { 
+	width: 100%;
+	height: 560px;
+	position: relative;
+	z-index: 0;
+}
+
+.form-box { 
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: rgba(255, 255, 255, 0.8);
+	z-index: 10;
+	width: 50%;
+	height: 560px;
+	padding-top: 40px;
+}
 
 /* ---------------------------------------- */
 

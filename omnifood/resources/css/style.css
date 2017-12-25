@@ -4,6 +4,11 @@
 
 /* ---------------------------------------- */
 
+/* 
+'* selector' targets all elements individually, blocks inheritance, which is not always desired.
+'html selector' targets the html element and then the other elements may inherit some of the properties we assigned to the html. 
+*/
+
 * {
 	margin: 0;
 	padding: 0;

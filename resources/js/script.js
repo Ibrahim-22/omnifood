@@ -84,15 +84,12 @@ $(document).ready(function () {
 			icon.removeClass('ion-close-round');
 		} 	
 	});
-	
-	
-	/* Maps */
-	const element = document.querySelector('.map');
-	
+
+	/* Map */
 	const map = new GMaps({
-				div: '.map',
-				lat: 38.7436266,
-				lng: -9.10,
+		div: '.map',
+		lat: 38.7436266,
+		lng: -9.10,
 		zoom: 12
 	});
 	
@@ -101,9 +98,7 @@ $(document).ready(function () {
 		lng: -9.1602037,
 		title: 'Lisbon',
 		infoWindow: {
-		  content: '<p>Our Lisbon HQ</p>'
+			content: '<p>Our Lisbon HQ</p>'
 		}
 	});
-	
-	
 });
